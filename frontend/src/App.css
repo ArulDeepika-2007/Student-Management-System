@@ -1,0 +1,185 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f6f9;
+}
+
+.app {
+  min-height: 100vh;
+}
+
+/* HEADER */
+
+.header {
+  background: #1f3c88;
+  color: white;
+  text-align: center;
+  padding: 30px 20px;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 32px;
+}
+
+.header p {
+  margin-top: 8px;
+  font-size: 16px;
+}
+
+/* MAIN CONTAINER */
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 30px auto;
+}
+
+/* CARDS */
+
+.form-card,
+.table-card {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  margin-bottom: 25px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+}
+
+h2 {
+  margin-top: 0;
+  color: #1f3c88;
+}
+
+/* FORM */
+
+form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+}
+
+input {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 7px;
+  font-size: 15px;
+  width: 100%;
+}
+
+input:focus {
+  outline: none;
+  border-color: #1f3c88;
+}
+
+/* BUTTONS */
+
+.buttons {
+  grid-column: 1 / -1;
+  display: flex;
+  gap: 10px;
+}
+
+button {
+  border: none;
+  padding: 11px 18px;
+  border-radius: 7px;
+  cursor: pointer;
+  background: #1f3c88;
+  color: white;
+  font-size: 14px;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+.cancel {
+  background: #777;
+}
+
+/* MESSAGE */
+
+.message {
+  margin-bottom: 0;
+  margin-top: 18px;
+  color: #1f3c88;
+  font-weight: bold;
+}
+
+/* SEARCH */
+
+.search-box {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+/* TABLE */
+
+.table-container {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 12px;
+  border-bottom: 1px solid #ddd;
+  text-align: left;
+  white-space: nowrap;
+}
+
+th {
+  background: #eef2ff;
+  color: #1f3c88;
+}
+
+/* ACTION BUTTONS */
+
+.edit {
+  background: #198754;
+  margin-right: 6px;
+}
+
+.delete {
+  background: #dc3545;
+}
+
+/* EMPTY MESSAGE */
+
+.empty {
+  text-align: center;
+  padding: 25px;
+  color: #777;
+}
+
+/* MOBILE */
+
+@media (max-width: 700px) {
+
+  form {
+    grid-template-columns: 1fr;
+  }
+
+  .header h1 {
+    font-size: 24px;
+  }
+
+  .container {
+    width: 95%;
+  }
+
+  .form-card,
+  .table-card {
+    padding: 18px;
+  }
+
+}
